@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Contribute - TwitchBox</title>
+
+	<meta name="title" content="Contribute - TwitchBox" />
+	<meta name="description" content="All the contributing details about the TwitchBox app." />
+	<!-- Open Graph -->
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://twitchbox.repl.co/contribute" />
+	<meta property="og:title" content="Contribute - TwitchBox" />
+	<meta property="og:description" content="All the contributing details about the TwitchBox app." />
+	<meta property="og:image" content="https://i.postimg.cc/CLW68x9N/preview.webp" />
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:url" content="https://twitchbox.repl.co/contribute" />
+	<meta name="twitter:title" content="Contribute - TwitchBox" />
+	<meta name="twitter:description" content="All the contributing details about the TwitchBox app." />
+	<meta name="twitter:image" content="https://i.postimg.cc/CLW68x9N/preview.webp" />
+
+	<link rel="stylesheet" href="./style.css" />
+	<link rel="icon" href="favicon.png" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+
+	<link rel="preload" href="/Coolvetica.ttf" as="font" type="font/ttf" crossorigin />
+
+	<style>
+		@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap");
+
+		@font-face {
+			font-family: "Coolvetica";
+			src: url("/Coolvetica.ttf") format("truetype");
+		}
+
+		html {
+			font-family: "Montserrat", sans-serif;
+		}
+
+		.coolvetica {
+			font-family: "Coolvetica", sans-serif;
+		}
+
+		/* ===== Scrollbar CSS ===== */
+		* {
+			scrollbar-width: thin;
+			/* For Firefox */
+		}
+
+		*::-webkit-scrollbar {
+			width: 7px;
+		}
+
+		*::-webkit-scrollbar-track {
+			background: transparent;
+		}
+
+		*::-webkit-scrollbar-thumb {
+			background-color: #ababab;
+		}
+
+		*::-webkit-scrollbar-thumb:hover {
+			background-color: #8f8f8f;
+		}
+
+		*::-webkit-scrollbar-thumb:active {
+			background-color: #7a7a7a;
+		}
+
+		.header{
+			height: 100vh;
+			width: 100vw;
+			background-color: #553989;
+		}
+
+		#heading {
+			font-family: "Coolvetica";
+			padding: 20px 0px;
+		}
+
+		button {
+			font-size: 14px;
+			line-height: 20px;
+			margin: 0px 5px;
+			padding: 10px 14px;
+			border-radius: 6px;
+			font-weight: 600;
+			box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+		}
+
+		#paypal-btn {
+			color: #fff;
+			background: #794ec7;
+		}
+
+		#paypal-btn:hover {
+			background: #8657dc;
+		}
+
+		#fork-btn {
+			color: #fff;
+			background: #794ec7;
+		}
+
+		#fork-btn:hover {
+			background: #8657dc;
+		}
+
+		#share-btn {
+			color: #fff;
+			background: #794ec7;
+		}
+
+		#share-btn:hover {
+			background: #8657dc;
+		}
+
+		#copy-btn {
+			background: #794ec7;
+			border-radius: 0px 6px 6px 0px;
+		}
+
+		#copy-btn:hover {
+			background: #8657dc;
+		}
+
+		#back-btn {
+			color: #000;
+			background: #e2e8f0;
+			font-weight: bold;
+			padding: 10px 14px;
+			border-radius: 6px;
+		}
+
+		#back-btn:hover {
+			background: #f8fafc;
+		}
+
+		.url {
+			color: #000;
+			background: #fff;
+			padding: 7px 10px;
+			margin: 0px -10px 0px 0px;
+			border-radius: 6px 0px 0px 6px;
+			outline: none;
+			user-select: none;
+			-webkit-user-select: none;
+			-ms-user-select: none;
+		}
+
+		@media (max-width: 600px) {
+			#copy-btn {
+				display: none;
+			}
+
+			.url {
+				display: none;
+			}
+		}
+
+		@media (min-width: 600px) {
+			#share-btn {
+				display: none;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<!-- HEADER START ============================================================================-->
+	<div class="header">
+		<div class="flex flex-col items-center justify-center" style="height: 85%; width: 100%">
+			<div id="heading" class="text-white text-center">
+				<h1 class="text-3xl font-semibold">CONTRIBUTE:</h1>
+			</div>
+			<div class="text-white">
+				<a href="https://github.com/sandunwira/TwitchBox/fork" target="_blank">
+					<button id="fork-btn">FORK</button>
+				</a>
+				<button id="share-btn">SHARE</button>
+
+				<input type="text" class="url" id="url-input" value="https://github.com/sandunwira/TwitchBox" />
+				<button id="copy-btn">SHARE</button>
+			</div>
+			<div id="heading" class="text-white text-center">
+				<h1 class="text-3xl font-semibold">SPONSOR:</h1>
+			</div>
+			<div class="text-white">
+				<a href="https://www.paypal.com/donate/?hosted_button_id=9VH548R7ZDWWG" target="_blank">
+					<button id="paypal-btn">PAYPAL</button>
+				</a>
+			</div>
+		</div>
+
+		<div class="flex flex-col items-center justify-center" style="height: 15%; width: 100%">
+			<div class="text-white">
+				<a id="back-btn" class="text-sm font-semibold" href="https://twitchbox.repl.co">
+					HOME
+				</a>
+			</div>
+		</div>
+	</div>
+	<!--============================================================================== HEADER END -->
+
+	<script>
+		const shareButton = document.getElementById("share-btn");
+
+		shareButton.addEventListener("click", async () => {
+			try {
+				await navigator.share({
+					text: "Hey, Check out TwitchBox. A lightweight Twitch.tv client for Windows",
+					url: "https://github.com/sandunwira/TwitchBox",
+				});
+				console.log("Link shared successfully.");
+			} catch (error) {
+				console.error("Error sharing link:", error);
+			}
+		});
+	</script>
+
+	<script>
+		// Get the input and button elements
+		const input = document.getElementById("url-input");
+		const button = document.getElementById("copy-btn");
+
+		// Add a click event listener to the button
+		button.addEventListener("click", function () {
+			// Select the text in the input field
+			input.select();
+
+			// Use the Clipboard API to copy the text to the clipboard
+			navigator.clipboard
+				.writeText(input.value)
+				.then(() => {
+					console.log("Text copied to clipboard");
+				})
+				.catch((err) => {
+					console.error("Error copying text: ", err);
+				});
+		});
+	</script>
+</body>
+
+</html>
